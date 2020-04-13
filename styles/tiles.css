@@ -1,0 +1,55 @@
+body {
+  margin: 0; }
+  body ol, body ul {
+    list-style-type: none; }
+  body a {
+    text-decoration: none; }
+  body .page-body {
+    margin: 20px; }
+
+body * {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.tiles-container {
+  padding: 20px 7%; }
+  .tiles-container.medium ol.tiles li.tile {
+    height: 250px;
+    line-height: 250px; }
+  .tiles-container ol.tiles {
+    column-count: 2; }
+    .tiles-container ol.tiles li.tile {
+      border-radius: 5px;
+      box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      height: 200px;
+      margin-bottom: 15px;
+      background-color: #4395E9;
+      line-height: 200px;
+      text-align: center;
+      position: relative; }
+      .tiles-container ol.tiles li.tile .title-tile {
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        transition: all 0.5s ease; }
+      .tiles-container ol.tiles li.tile div span {
+        line-height: normal;
+        display: inline-block;
+        margin: 16px;
+        font-size: 20px; }
+      .tiles-container ol.tiles li.tile .hover-tile {
+        opacity: 0;
+        transition: all 0.5s ease;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        .tiles-container ol.tiles li.tile .hover-tile span {
+          font-size: 16px; }
+      .tiles-container ol.tiles li.tile:hover .title-tile {
+        opacity: 0; }
+      .tiles-container ol.tiles li.tile:hover .hover-tile {
+        opacity: 1; }
+
+/*# sourceMappingURL=tiles.css.map */

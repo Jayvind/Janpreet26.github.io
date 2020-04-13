@@ -1,0 +1,57 @@
+@import 'global';
+
+.tiles-container {
+  padding: 20px 7%;
+  &.medium {
+    ol.tiles li.tile {
+      height: 250px;
+      line-height: 250px;
+    }
+  }
+  ol.tiles {
+    column-count: 2;
+    li.tile {
+      border-radius: 5px;
+      box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
+      height: 200px;
+      margin-bottom: 15px;
+      background-color: $nav-color;
+      line-height: 200px;
+      text-align: center;
+      position: relative;
+      .title-tile {
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        transition: all 0.5s ease;
+      }
+      div span {
+        line-height: normal;
+        display: inline-block;
+        margin: 16px;
+        font-size: 20px;
+      }
+      .hover-tile {
+        opacity: 0;
+        transition: all 0.5s ease;
+        background-color: rgba(255,255,255,0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        span {
+          font-size: 16px;
+        }
+      }
+      &:hover {
+        .title-tile {
+          opacity: 0;
+        }
+        .hover-tile {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

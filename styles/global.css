@@ -1,0 +1,13 @@
+body {
+  margin: 0; }
+  body ol, body ul {
+    list-style-type: none; }
+  body a {
+    text-decoration: none; }
+  body .page-body {
+    margin: 20px; }
+
+body * {
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*# sourceMappingURL=global.css.map */

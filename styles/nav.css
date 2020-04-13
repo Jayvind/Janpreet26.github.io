@@ -1,0 +1,67 @@
+body {
+  margin: 0; }
+  body ol, body ul {
+    list-style-type: none; }
+  body a {
+    text-decoration: none; }
+  body .page-body {
+    margin: 20px; }
+
+body * {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.navigation-container {
+  display: flex;
+  background-color: #4395E9;
+  flex-direction: row;
+  height: 65px; }
+  .navigation-container .logo {
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 65px;
+    width: 65px; }
+  .navigation-container .main-menu {
+    display: flex;
+    flex-direction: row; }
+    .navigation-container .main-menu .main-menu-link {
+      position: relative;
+      display: inline-block;
+      padding: 22px 16px; }
+      .navigation-container .main-menu .main-menu-link:hover .menu-link-label::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #f1f1f1 transparent;
+        z-index: 1; }
+      .navigation-container .main-menu .main-menu-link:hover .sub-menu-links {
+        display: block; }
+      .navigation-container .main-menu .main-menu-link .menu-link-label {
+        color: white;
+        font-weight: bold;
+        border: none; }
+        .navigation-container .main-menu .main-menu-link .menu-link-label a {
+          text-decoration: none;
+          color: white; }
+        .navigation-container .main-menu .main-menu-link .menu-link-label.no-sub::after {
+          display: none; }
+      .navigation-container .main-menu .main-menu-link .sub-menu-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        min-width: 190px;
+        z-index: 100;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+        .navigation-container .main-menu .main-menu-link .sub-menu-links .sub-menu-link {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block; }
+          .navigation-container .main-menu .main-menu-link .sub-menu-links .sub-menu-link:hover {
+            background-color: #ddd; }
+
+/*# sourceMappingURL=nav.css.map */

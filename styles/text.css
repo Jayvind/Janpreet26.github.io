@@ -1,0 +1,23 @@
+.text-block {
+  padding: 0 20px; }
+  .text-block .heading {
+    font-weight: bold;
+    font-size: 32px; }
+  .text-block .ital-quote {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-style: italic;
+    font-size: 60px; }
+  .text-block .text {
+    margin: 20px; }
+    .text-block .text a {
+      color: #7a7a78;
+      text-decoration: underline; }
+      .text-block .text a:hover {
+        color: black;
+        transition: all 0.5s ease; }
+  .text-block .bullet-list {
+    list-style-type: disc; }
+    .text-block .bullet-list li {
+      margin: 16px; }
+
+/*# sourceMappingURL=text.css.map */
